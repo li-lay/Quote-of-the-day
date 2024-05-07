@@ -1,0 +1,29 @@
+{
+  "name": "quote-of-the-day",
+  "productName": "Quote of the day",
+  "authur": "Lilay",
+  "description": "Get random Quote",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3"
+  },
+  "scripts": {
+    "start": "electron28 .",
+    "package": "electron-builder"
+  },
+  "build": {
+    "appId": "lilay.dev",
+    "productName": "Quote of the day",
+    "copyright": "Copyright © 2023 Lilay",
+    "linux": {
+      "icon": "./quote.png",
+      "target": "appimage"
+    },
+    "win": {
+      "icon": "./quote.png",
+      "target": "nsis"
+    }
+  }
+}
